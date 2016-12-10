@@ -15,7 +15,9 @@ function sendWeather(ws) {
         type: 'weather',
         data: currentWeather
     }), err => {
-        console.error("sending error", err);
+        if (err) {
+            console.error("sending error", err);
+        }
     });
 }
 
