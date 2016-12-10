@@ -26,7 +26,12 @@ function sendWeatherToAll() {
 }
 
 function performUpdate() {
-     forecastIo.forecast(config.get('lat'), config.get('lon'))
+    const options = {
+        lang: 'en',
+        units: 'si',
+        exclude: 'minutely,hourly,daily,flags,alerts'
+    };
+    forecastIo.forecast(config.get('lat'), config.get('lon'), options)
         .then(data => {
             currentWeather = data
             console.log("got update");
