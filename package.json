@@ -1,0 +1,13 @@
+{
+  "name": "cracathon2016-forecast-fetcher",
+  "version": "1.0.0",
+  "description": "Forecast fetcher for 2016 Cracathon",
+  "main": "index.js",
+  "author": "Marek Rusinowski <marekrusinowski@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "config": "^1.24.0",
+    "forecastio": "^1.0.2",
+    "ws": "^1.1.1"
+  }
+}
